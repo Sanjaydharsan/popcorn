@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcorn</title>
+
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="mobile-mode">
+        <h1><i class="fa-solid fa-tv" style="font-size: 36px;"></i> <br> <br> Switch <br> to desktop mode</h1>
+    </div>
+
+    <!-- navbar -->
+
+    <div class="navbar">
+
+        <div class="nav-heading">
+
+            <h1>POPCORN</h1>
+
+        </div>
+
+        <div class="nav-items">
+
+            <div class="nav-list">
+
+                <p><a href="index.html">HOME</a></p>
+                <p><a href="movies.html">MOVIES</a></p>
+                <p><a href="shows.html">SHOWS</a></p>
+
+            </div>
+
+
+            <div class="searchbar">
+
+                <input type="text" id="searchbar" placeholder="Search...">
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+
+            </div>
+
+            <div class="login">
+
+                <p><a href="signin.html">SIGN IN</a></p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="red">
+                    <path
+                        d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
+                </svg>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--banner -->
+
+    <div class="banner">
+
+        <div class="main-banner-card">
+            
+            <div class="ban-gradient"></div>
+            <img src="img/banner.png" class="banner-img" alt="bannerimg">
+
+        </div>
+
+
+
+        <div class="main-banner-content">
+
+            <h1 class="main-banner-title">POPCORN</h1>
+            <h3>UNLIMITED MOVIE STREAMMING</h3>
+
+        </div>
+
+    </div>
+
+    <!-- suggestion -->
+
+    <div class="home">
+
+        <h2 class="sub-title">MOVIES FOR YOU</h2>
+
+        <div class="suggestion">
+
+            <!-- movie card -->
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/1917.jpeg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>1917</h4>
+                    <h5>2019 ‧ War/Action</h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/batman.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>The Dark Knight Rises</h4>
+                    <h5>2012 ‧ Action/Thriller</h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/black adam.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Black Adam</h4>
+                    <h5>2022 ‧ Action/Adventure</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/avatar.jpeg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Avatar</h4>
+                    <h5>2009 ‧ Sci-fi/Action </h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/man of steel.jpeg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Man of Steel</h4>
+                    <h5>2013 ‧ Action/Sci-fi </h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/The Exorcist.jpeg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>The Exorcist</h4>
+                    <h5>1973 ‧ Horror/Mystery</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/joker.jpeg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Joker</h4>
+                    <h5>2019 ‧ Thriller/Crime</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/dune.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Dune</h4>
+                    <h5>2021 ‧ Sci-fi/Adventure</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/godzila kong.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Godzilla vs Kong</h4>
+                    <h5>2021 ‧ Action/Sci-fi </h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/aquaman.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Aquaman</h4>
+                    <h5>2018 ‧ Action/Adventure </h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/endgame.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Avengers: Endgame</h4>
+                    <h5>2019 ‧ Action/Sci-fi </h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/movies/ww84.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Wonder Women 1984</h4>
+                    <h5>2020 ‧ Action/Adventure </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="load-more">
+
+            <a href="movies.html"><input type="button" value="LOAD MORE"></a>
+
+        </div>
+
+    </div>
+
+
+    <!-- suggestion section 2 -->
+
+    <div class="home">
+
+        <h2 class="sub-title">SHOWS FOR YOU</h2>
+
+
+        <div class="suggestion">
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/bb.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Breaking Bad</h4>
+                    <h5>2008 ‧ Drama ‧ 5 seasons</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/planet earth.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Planet Earth II</h4>
+                    <h5>2016 ‧ Documentary ‧ 1 season</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/boys.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>The Boys</h4>
+                    <h5>2019 ‧ Drama ‧ 4 seasons</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/money heist.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Money Heist</h4>
+                    <h5>2017 ‧ Thriller ‧ 5 seasons</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/loki.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Loki</h4>
+                    <h5>2021 ‧ Drama ‧ 2 seasons</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/got.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Game of Thrones</h4>
+                    <h5>2011 ‧ Drama ‧ 8 seasons</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/wednesday.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Wednesday</h4>
+                    <h5>2022 ‧ Horror ‧ 1 season</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/Lucifer.png" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Lucifer</h4>
+                    <h5>2016 ‧ Drama ‧ 6 seasons</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/peacemaker.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Peacemaker</h4>
+                    <h5>2022 ‧ Action ‧ 1 season</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/manifest.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Manifest</h4>
+                    <h5>2018 ‧ Drama ‧ 4 seasons</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/attack on titan.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Attack on Titan</h4>
+                    <h5>2013 ‧ Action ‧ 3 seasons</h5>
+
+                </div>
+
+            </div>
+
+            <div class="movie">
+
+                <div class="movie-card">
+
+                    <img src="img/shows/walking dead.jpg" class="card-img" alt="image">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Walking Dead</h4>
+                    <h5>2010 ‧ Drama ‧ 11 seasons</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="load-more">
+
+            <a href="shows.html"><input type="button" value="LOAD MORE"></a>
+
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+
+        <div class="footer-title">
+            <h1>POPCORN</h1>
+            <p>Online Streaming Website</p>
+        </div>
+
+
+
+        <div class="about">
+            <ul>
+                <li>
+                    <h4>> About</h4>
+                </li>
+                <li>
+                    <h4>> Contact</h4>
+                </li>
+                <li>
+                    <h4>> privarcy policy</h4>
+                </li>
+                <li>
+                    <h4>> Terms and condition</h4>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h4>> FAQ</h4>
+                </li>
+                <li>
+                    <h4>> Blog</h4>
+                </li>
+                <li>
+                    <h4>> Cancellation</h4>
+                </li>
+                <li>
+                    <h4>> Terms of use</h4>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h4>> Help</h4>
+                </li>
+                <li>
+                    <h4>> Cookies</h4>
+                </li>
+                <li>
+                    <h4>> Account</h4>
+                </li>
+                <li>
+                    <h4>> media centre</h4>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h4>> Live Tv</h4>
+                </li>
+                <li>
+                    <h4>> Live Movies</h4>
+                </li>
+                <li>
+                    <h4>> Live Shows</h4>
+                </li>
+                <li>
+                    <h4>> Streaming Library</h4>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="follow-card">
+            <h3>Follow Us On</h3>
+        </div>
+
+        <div class="social-media">
+            <p><i class="fa-brands fa-square-instagram"></i></p>
+            <p><i class="fa-brands fa-square-facebook"></i></p>
+            <p><i class="fa-brands fa-square-youtube"></i></i></p>
+            <p><i class="fa-brands fa-square-x-twitter"></i></p>
+        </div>
+
+        <hr>
+        <div class="copyright">
+            <p>&copy; copyright 2024 Sanjay </p>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

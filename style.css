@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    border-left: 1px solid rgb(28, 28, 28);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: red ;
+    border-radius: 10px;
+    border: 1px solid red;
+    size: 10px;
+    
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(20, 20, 20);
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    padding: 10px;
+    width: 300px;
+    border: solid 5px rgb(28, 28, 28);
+    border-radius: 25px;
+    background-color: rgb(28, 28, 28);
+}
+
+.searchbar svg {
+    cursor: pointer;
+}
+
+#searchbar {
+    height: 25px;
+    padding-left: 15px;
+    width: 300px;
+    border: solid 5px rgb(28, 28, 28);
+    border-radius: 25px;
+    background-color: rgb(28, 28, 28);
+    outline: none;
+    color: white;
+}
+
+.login {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.nav-heading {
+    color: red;
+    font-family: "Rubik Mono One", monospace;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 20px;
+    padding-right: 90px;
+}
+
+.nav-items a,
+p {
+    text-decoration: none;
+    transition: all 1s;
+    color: white;
+}
+
+.nav-items a:hover {
+    color: red;
+}
+
+.menu-button {
+    color: red;
+    display: none;
+}
+
+/* banner */
+
+.banner {
+    margin: 20px 80px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.banner-card:hover .banner-img {
+    transform: scale(1.1);
+}
+
+.ban-gradient {
+    background-image: linear-gradient(to right, black, transparent);
+    height: 450px;
+    width: 1200px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-card {
+    height: 450px;
+    width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.banner-img {
+    object-fit: cover;
+    border-radius: 20px;
+    height: 450px;
+    width: 1200px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.banner-content {
+    color: white;
+    position: absolute;
+    bottom: 140px;
+    left: 100px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.watch :hover {
+    color: red;
+    background-color: rgb(28, 28, 28);
+}
+
+.watch input {
+    cursor: pointer;
+    padding: 15px 45px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    background-color: red;
+}
+
+.banner-title {
+    font-size: 50px;
+}
+
+.main-banner-title {
+    color: red;
+    font-size: 50px;
+    font-family: "Rubik Mono One", monospace;
+}
+
+.main-banner-content {
+    color: white;
+    position: absolute;
+    bottom: 250px;
+    left: 100px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* sign page */
+
+.login-page {
+    background: url(img/banner.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 420px;
+    background-color: rgb(20, 20, 20);
+    color: red;
+    padding: 50px 30px;
+    border-radius: 25px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input {
+    width: 85%;
+    height: 100%;
+    background: rgb(28, 28, 28);
+    border: none;
+    outline: none;
+    border: 2px solid rgb(28, 28, 28);
+    border-radius: 40px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 45px;
+
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.forgot {
+    text-align: right;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: red;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 50%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    margin: 30px 0;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+
+.register {
+    text-align: center;
+    color: white;
+}
+
+.register p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: red;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* filter */
+
+.filter {
+    display: flex;
+    height: 75px;
+    width: 1200px;
+    background-color: rgb(28, 28, 28);
+    border-radius: 15px;
+    margin-bottom: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter h2 {
+    color: white;
+    margin-left: 20px;
+}
+.sorting{
+    display: flex;
+}
+.sorting p{
+    background-color: rgb(20, 20, 20);
+    padding: 10px 15px;
+    margin-right: 20px;
+    border-radius: 15px;
+    align-items: center;
+}
+.sorting p:hover {
+    color: red;
+}
+
+
+/* suggestion */
+
+.home {
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: center;
+}
+
+.suggestion {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.movie {
+    width: 160px;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+.movie-card {
+    height: 250px;
+    width: 160px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-img {
+    height: 250px;
+    width: 160px;
+    object-fit: cover;
+    transition: 1s;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.movie:hover .card-img {
+    transform: scale(1.05);
+
+}
+
+.card-content h5,
+h4 {
+    color: white;
+    margin-left: 2px;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.movie:hover .card-content h4 {
+    color: red;
+}
+
+.load-more {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.load-more :hover {
+    color: white;
+    background-color: red;
+}
+
+.load-more input {
+    cursor: pointer;
+    padding: 15px 30px;
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(28, 28, 28);
+}
+
+/* footer */
+
+.footer {
+    padding: 40px;
+    margin: 40px;
+}
+
+.footer-title h1 {
+    color: red;
+    font-family: "Rubik Mono One", monospace;
+}
+
+.footer-title p {
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.about ul {
+    color: white;
+    cursor: pointer;
+    list-style: none;
+}
+
+.follow-card {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-media {
+    padding: 20px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    column-gap: 25px;
+    cursor: pointer;
+}
+
+.social-media p:hover {
+    color: red;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mobile-mode{
+    margin-top: 100px;
+   display: none;   
+}
+
+.mobile-mode h1{
+    text-align: center;
+    color: red;
+    
+}
+@media screen and (max-width: 999px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+    .banner{
+        display:none;
+    }
+    .home{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .mobile-mode{
+        display: block;
+    }
+}
